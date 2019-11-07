@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "multiple-search-queries-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/multipleSearchQueries/MultipleSearchQueriesWebPart.js",
+          "manifest": "./src/webparts/multipleSearchQueries/MultipleSearchQueriesWebPart.manifest.json"
+        }
+      ]
+    },
+    "search-event-consumer-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/searchEventConsumer/SearchEventConsumerWebPart.js",
+          "manifest": "./src/webparts/searchEventConsumer/SearchEventConsumerWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "MultipleSearchQueriesWebPartStrings": "lib/webparts/multipleSearchQueries/loc/{locale}.js",
+    "SearchEventConsumerWebPartStrings": "lib/webparts/searchEventConsumer/loc/{locale}.js"
+  }
+}
